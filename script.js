@@ -154,15 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var parts = x.toString().split(".");
         // Add commas to the integer part
         parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        // If there are decimal parts, check if there are trailing zeros
-        if (parts.length > 1) {
-            parts[1] = parts[1].replace(/0+$/, ''); // Remove trailing zeros
-            // Join the integer and decimal parts
-            return parts.join(".") || parts[0]; // If decimal part is empty, return only the integer part
-        } else {
-            // If no decimal part, return the integer part only
-            return parts[0];
-        }
+
     }
 
     function animateCount(element) {
