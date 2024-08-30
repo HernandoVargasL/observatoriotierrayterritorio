@@ -134,7 +134,7 @@ $(document).ready(function () {
         dataType: 'json',
         success: function (data) {
             if (data.status) {
-                $("#nimagenes").html((data.recordsTotal / 1000000.0).toFixed(1));
+                $("#nimagenes").html("4.0");
             } else {
                 $("#nimagenes").html("3.8");
             }
