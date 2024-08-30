@@ -134,7 +134,8 @@ $(document).ready(function () {
         dataType: 'json',
         success: function (data) {
             if (data.status) {
-                $("#nimagenes").html("4.0");
+                $("#nimagenes").html('4.0');
+                //$("#nimagenes").html((data.recordsTotal / 1000000.0).toFixed(1));
             } else {
                 $("#nimagenes").html("3.8");
             }
@@ -149,12 +150,20 @@ $(document).ready(function () {
 document.addEventListener("DOMContentLoaded", function () {
     var gotoElement = $(".goto");
     
-    function numberWithCommas(x) {
-        // Convert the number to a string
-        var parts = x.toString().split(".");
+    function numberWithCommas(value) {
+        // Convert the number to a string to handle formatting
+        let [integerPart, decimalPart] = value.toString().split(".");
+      
         // Add commas to the integer part
-        parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
+        integerPart = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      
+        // Reassemble the number, preserving decimal part if present
+        if (decimalPart !== undefined) {
+            // Ensure decimal part is preserved as it was in the input
+            return `${integerPart}.${decimalPart}`;
+        } else {
+            return integerPart;
+        }
     }
 
     function animateCount(element) {
@@ -166,11 +175,20 @@ document.addEventListener("DOMContentLoaded", function () {
             step: function (now) {
                 // Round 'now' to one decimal place
                 var roundedNow = Math.round(now * 10) / 10;
-                // Convert 'roundedNow' to a float to handle decimals
-                if (parseFloat(roundedNow) % 1 === 0) {
+
+                // Get the element's ID
+                var elementId = element.attr('id');
+
+                // Check if the element is #nimagenes
+                if (elementId === 'nimagenes') {
+                    // For #nimagenes, always display one decimal place
+                    element.text(numberWithCommas(roundedNow.toFixed(1)));
+                } else if (elementId === 'nentidades') {
+                    // For other elements, display as is
                     element.text(numberWithCommas(Math.ceil(roundedNow)));
                 } else {
-                    element.text(numberWithCommas(parseFloat(roundedNow).toFixed(1)));
+                    // For other elements, display as is
+                    element.text(numberWithCommas(roundedNow.toFixed(1)));
                 }
             }
         });
