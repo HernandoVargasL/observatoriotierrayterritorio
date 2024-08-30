@@ -1,0 +1,3267 @@
+﻿/*fonts*/
+@font-face {
+    font-family: 'Gill Sans Std Bold';
+    src: url(/fonts/GillSansStd-Bold.eot);
+    src: url(/fonts/GillSansStd-Bold.eot?#iefix) format('embedded-opentype'), url(../fonts/GillSansStd-Bold.woff2) format('woff2'), url(/fonts/GillSansStd-Bold.woff) format('woff'), url(/fonts/GillSansStd-Bold.ttf) format('truetype'), url(/fonts/GillSansStd-Bold.svg#GillSansStd-Bold) format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std semi Bold';
+    src: url(/fonts/GillSans-SemiBold.eot);
+    src: url(/fonts/GillSans-SemiBold.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSans-SemiBold.woff2) format('woff2'), url(/fonts/GillSans-SemiBold.woff) format('woff'), url(/fonts/GillSans-SemiBold.ttf) format('truetype'), url(/fonts/GillSans-SemiBold.svg#GillSans-SemiBold) format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Bold Italic';
+    src: url(/fonts/GillSansStd-BoldItalic.eot);
+    src: url(/fonts/GillSansStd-BoldItalic.eot?#iefix) format('embedded-opentype'), url(../fonts/GillSansStd-BoldItalic.woff2) format('woff2'), url(/fonts/GillSansStd-BoldItalic.woff) format('woff'), url(/fonts/GillSansStd-BoldItalic.ttf) format('truetype'), url(/fonts/GillSansStd-BoldItalic.svg#GillSansStd-BoldItalic) format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Italic';
+    src: url(/fonts/GillSansStd-Italic.eot);
+    src: url(/fonts/GillSansStd-Italic.eot?#iefix) format('embedded-opentype'), url(../fonts/GillSansStd-Italic.woff2) format('woff2'), url(/fonts/GillSansStd-Italic.woff) format('woff'), url(/fonts/GillSansStd-Italic.ttf) format('truetype'), url(/fonts/GillSansStd-Italic.svg#GillSansStd-Italic) format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Light';
+    src: url(/fonts/GillSansStd-Light.eot);
+    src: url(/fonts/GillSansStd-Light.eot?#iefix) format('embedded-opentype'), url(../fonts/GillSansStd-Light.woff2) format('woff2'), url(/fonts/GillSansStd-Light.woff) format('woff'), url(/fonts/GillSansStd-Light.ttf) format('truetype'), url(/fonts/GillSansStd-Light.svg#GillSansStd-Light) format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std';
+    src: url(/fonts/GillSansStd.eot);
+    src: url(/fonts/GillSansStd.eot?#iefix) format('embedded-opentype'), url(../fonts/GillSansStd.woff2) format('woff2'), url(/fonts/GillSansStd.woff) format('woff'), url(/fonts/GillSansStd.ttf) format('truetype'), url(/fonts/GillSansStd.svg#GillSansStd) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Extra Bold Disp';
+    src: url(/fonts/GillSansStd-ExtraBoldDisp.eot);
+    src: url(/fonts/GillSansStd-ExtraBoldDisp.eot?#iefix) format('embedded-opentype'), url(../fonts/GillSansStd-ExtraBoldDisp.woff2) format('woff2'), url(/fonts/GillSansStd-ExtraBoldDisp.woff) format('woff'), url(/fonts/GillSansStd-ExtraBoldDisp.ttf) format('truetype'), url(/fonts/GillSansStd-ExtraBoldDisp.svg#GillSansStd-ExtraBoldDisp) format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Condensed';
+    src: url(/fonts/GillSansStd-Condensed.eot);
+    src: url(/fonts/GillSansStd-Condensed.eot?#iefix) format('embedded-opentype'), url(../fonts/GillSansStd-Condensed.woff2) format('woff2'), url(/fonts/GillSansStd-Condensed.woff) format('woff'), url(/fonts/GillSansStd-Condensed.ttf) format('truetype'), url(/fonts/GillSansStd-Condensed.svg#GillSansStd-Condensed) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Extra Bold';
+    src: url(/fonts/GillSansStd-ExtraBold.eot);
+    src: url(/fonts/GillSansStd-ExtraBold.eot?#iefix) format('embedded-opentype'), url(../fonts/GillSansStd-ExtraBold.woff2) format('woff2'), url(/fonts/GillSansStd-ExtraBold.woff) format('woff'), url(/fonts/GillSansStd-ExtraBold.ttf) format('truetype'), url(/fonts/GillSansStd-ExtraBold.svg#GillSansStd-ExtraBold) format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/*reset*/
+* {
+    font-family: 'Tajawal-Regular';
+}
+
+.logos {
+    align-items: center;
+}
+
+    .logos .logo-pagina.cem {
+        padding: 13px 15px;
+        height: 70%;
+        display: flex;
+    }
+
+button:focus {
+    outline: inherit;
+}
+:focus {
+    outline: none;
+}
+
+html,
+body {
+    font-family: "Tajawal-Regular";
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 14px !important;
+}
+
+.btn,
+.form-control,
+select,
+input {
+    border-radius: 5px;
+}
+
+select {
+    background-image: url(/images/select.svg) !important;
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    outline: 0;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    margin-top: 0px;
+    width: 100% !important;
+}
+
+.select2-container--default .select2-selection--multiple {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    border-radius: 5px;
+}
+
+.select2-container .select2-search--inline {
+    margin-top: 6px;
+    width: 100%;
+}
+
+.select2-container--default .select2-selection--single {
+    height: 34px;
+    padding: 2px 6px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    border-radius: 5px;
+}
+
+.tematica-container > .select2 > .selection > .select2-selection {
+    height: 38px;
+    padding-left: 0px;
+}
+
+#select2-searchFiltroTematicaServicios-results,
+#select2-searchFiltroTematicaPlanchas-results,
+#select2-searchFiltroTematicaPlanchasAgro-results,
+#select2-searchFiltroTematicaImagenes-results,
+#select2-searchFiltroTematicaGeodesia-results {
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: 1px solid #ccc;
+}
+
+.select2-search__field {
+    outline: none;
+}
+
+.select2-container--default {
+    border: none;
+    font-size: 14px;
+}
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        color: #555;
+    }
+
+    .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+        padding: 0 5px 5px;
+        display: block;
+    }
+
+
+.esriControlsBR {
+    right: 23px;
+}
+
+.esriAttribution {
+    background: rgba(128, 128, 128, 0.5) !important;
+}
+
+#layersDiv .esriLegendServiceLabel {
+    display: none;
+}
+
+#layersDiv .esriLegendService {
+    padding: 10px;
+    margin: 0px;
+}
+
+    #layersDiv .esriLegendService > div {
+        padding-left: 0px;
+    }
+
+#layersDiv .esriLegendMsg {
+    padding: 5px;
+}
+
+#layersDiv .panel {
+    color: black;
+    margin-bottom: 10px;
+    border: 1px solid #F2EFE9;
+    border-radius: 5px;
+}
+
+#layersDiv .panel-heading {
+    color: black;
+    background-color: #F2EFE9;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px;
+}
+
+#layersDiv .panel-title {
+    height: unset;
+    font-size: 14px !important;
+}
+
+.customPicker .colorpicker-alpha {
+    left: 3px;
+    margin-bottom: 0px;
+}
+
+.customPicker .colorpicker-text {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    position: unset;
+    height: auto;
+    text-align: center;
+}
+
+.customPicker .colorpicker-saturation {
+    display: none;
+}
+
+.customPicker .colorpicker-hue {
+    display: none;
+}
+
+.customPicker .colorpicker-color {
+    display: none;
+}
+
+
+.layersDivOpacity {
+    float: right;
+    border: none;
+    padding: 0px 5px 0px 0px;
+    background: transparent;
+    font-size: 14px;
+}
+
+.layersDivActive {
+    float: right;
+    border: none;
+    padding: 0px 5px 0px 0px;
+    background: transparent;
+    font-size: 14px;
+}
+
+.layersDivDelete {
+    float: right;
+    border: none;
+    padding: 0px;
+    font-size: 14px;
+    padding: 0px 5px 0px 0px;
+    color: red !important;
+}
+
+.layersDivCenter {
+    float: right;
+    border: none;
+    padding: 0px;
+    font-size: 14px;
+    padding: 0px 5px 0px 0px;
+}
+
+.layersDivTable {
+    float: right;
+    border: none;
+    padding: 0px;
+    font-size: 14px;
+    padding: 0px 5px 0px 0px;
+    color: red !important;
+}
+
+.layersDivCompare {
+    float: right;
+    border: none;
+    padding: 0px 5px 0px 0px;
+    background: transparent;
+    font-size: 14px;
+}
+
+.map .logo-med {
+    display: none;
+}
+
+.esriOverviewMap.ovwTR {
+    top: 0px;
+}
+
+.esriScalebar {
+    display: inline-table !important;
+    float: right !important;
+    position: unset !important;
+    margin-right: 20px !important;
+}
+
+.clearTextBtn {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    height: 14px;
+    margin: auto;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+#coordinatesDiv {
+    position: absolute;
+    cursor: pointer;
+    bottom: 5px;
+    left: 18px;
+    z-index: 100;
+    color: #323232;
+    line-height: 15px;
+    font-size: 14px;
+    background: rgba(128, 128, 128, 0.5) !important;
+}
+
+.esriSimpleSlider {
+    margin: unset !important;
+}
+
+.calcite-navbar {
+    height: 60px;
+    z-index: 100;
+    margin: 0px;
+}
+
+.calcite .esriPopup .titlePane {
+    color: white;
+    background-color: #3C3C3B !important;
+}
+
+.calcite .esriPopup .titleButton.close {
+    color: white !important;
+    opacity: 1;
+}
+
+#navbar {
+    font-family: "Tajawal-Regular";
+    font-size: 16px;
+}
+
+.active-nav {
+    background: #6445E1 !important;
+}
+
+
+#navbar {
+    z-index: 5000;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+}
+
+.nav > li > a:hover {
+    text-decoration: none;
+}
+
+#loginBtn:hover {
+    text-decoration: none;
+    background: unset !important;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+    #navbar {
+        display: none !important;
+    }
+
+    .calcite-title-main-text {
+        position: absolute;
+    }
+}
+
+.calcite-bgcolor-igac {
+    background-color: #3C3C3B !important;
+}
+
+.calcite-map .calcite-map-absolute {
+    top: 100px;
+}
+
+.calcite-nav-bottom .calcite-panels {
+    top: 50px;
+    left: 0px;
+}
+
+.calcite-map .panel-title {
+    font-size: unset;
+}
+
+.form-control {
+    font-size: 14px;
+}
+
+.btn {
+    font-size: 14px;
+}
+
+.btn-search {
+    font-size: 14px;
+}
+
+#drawLineBtn {
+    background-image: url(/images/panel_dibujo/linea.png);
+    height: 36px;
+    width: 36px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#drawPointBtn {
+    background-image: url(/images/panel_dibujo/punto.png);
+    height: 36px;
+    width: 36px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#drawPolylineBtn {
+    background-image: url(/images/panel_dibujo/multilinea.png);
+    height: 36px;
+    width: 36px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#drawFreehandPolylineBtn {
+    background-image: url(/images/panel_dibujo/linea2.png);
+    height: 36px;
+    width: 36px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#drawTriangleBtn2 {
+    background-image: url(/images/panel_dibujo/triangulo.png);
+    height: 36px;
+    width: 20%;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#drawCircleBtn2 {
+    background-image: url(/images/panel_dibujo/circulo.png);
+    height: 36px;
+    width: 20%;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#drawEllipseBtn2 {
+    background-image: url(/images/panel_dibujo/extent.png);
+    height: 36px;
+    width: 20%;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#drawPolygonBtn2 {
+    background-image: url(/images/panel_dibujo/poligono.png);
+    height: 36px;
+    width: 20%;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#drawTriangleBtn {
+    background-image: url(/images/panel_dibujo/triangulo.png);
+    height: 36px;
+    height: 36px;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#drawCircleBtn {
+    background-image: url(/images/panel_dibujo/circulo.png);
+    height: 36px;
+    height: 36px;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#drawEllipseBtn {
+    background-image: url(/images/panel_dibujo/elipse.png);
+    height: 36px;
+    height: 36px;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#drawPolygonBtn {
+    background-image: url(/images/panel_dibujo/poligono.png);
+    height: 36px;
+    height: 36px;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#drawFreehandPolygonBtn {
+    background-image: url(/images/panel_dibujo/poligono2.png);
+    height: 36px;
+    height: 36px;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#drawFreehandPolygonBtn2 {
+    background-image: url(/images/panel_dibujo/poligono2.png);
+    height: 36px;
+    width: 20%;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#drawTextBtn {
+    background-image: url(/images/panel_dibujo/texto.png);
+    height: 36px;
+    width: 36px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#drawDeleteBtn {
+    background-image: url(/images/panel_dibujo/configuracion.png);
+    height: 36px;
+    width: 36px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#mainDiv {
+    height: calc(100vh - 110px);
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    overflow-y: auto;
+    background: #FAFAFA !important;
+    z-index: 99;
+    position: absolute;
+    top: 108px;
+}
+
+.main-small {
+    width: 350px;
+}
+
+.main-small-map {
+    width: calc(100vw - 350px);
+    left: 350px !important;
+}
+
+@media screen and (max-width: 767px) {
+    #mainDiv {
+        height: calc(50vh - 60px);
+        top: calc(50% + 61px);
+    }
+
+    .main-small-map {
+        width: 100%;
+        left: 0px !important;
+        height: 50%;
+    }
+
+    #mapViewDiv {
+        z-index: 1000;
+    }
+}
+
+#mainHeading {
+    border-bottom: 1px solid gray;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+    #mainHeading > .nav-pills > li > a {
+        padding: 5px;
+    }
+
+.calcite-map .panel-collapse > .panel-body {
+    max-height: unset !important;
+    background: white;
+    padding: 10px;
+}
+
+.calcite-panels .panel-body {
+    font-size: 14px !important;
+}
+
+.calcite-panels .panel-title {
+    font-size: 14px !important;
+}
+
+
+.calcite-map .calcite-bg-custom .panel {
+    background: grey;
+}
+
+.calcite-map .panel-collapse {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.panel-heading-f {
+    padding: 1px;
+    color: white;
+    background-color: #3C3C3B !important;
+}
+
+.icon-panel {
+    min-width: unset !important;
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 0 !important;
+    margin-left: 5px;
+}
+
+#panelSearchFiltros .select2-selection__placeholder {
+    font-style: italic;
+}
+
+#panelSearchFiltros .select2-search--inline {
+    font-style: italic;
+}
+
+.calcite-map .panel-close2 {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: 99;
+    display: block;
+    float: right;
+    left: 0px;
+    color: white;
+    padding: 6px 8px 0px 0px;
+}
+
+.calcite-map .panel-close span {
+    top: 6px;
+}
+
+.panel-tools {
+    border-radius: 50%;
+    background: #3268DF;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    z-index: 99;
+    display: block;
+    right: 5px;
+    top: 15px;
+    color: white;
+    background-image: url(/images/iconos/Tool.png);
+    background-size: contain;
+}
+
+    .panel-tools span {
+        top: 9px;
+        font-size: 18px;
+    }
+
+#toolsDiv {
+    border-radius: 10px;
+    background: #3268DF;
+    position: absolute;
+    right: 45px;
+    top: 15px;
+    color: white;
+    width: 200px;
+    z-index: 200;
+    padding: 15px;
+}
+
+    #toolsDiv a {
+        color: white;
+        display: inline-block;
+        width: 100%;
+        border-radius: 3px;
+        padding-left: 5px;
+    }
+
+        #toolsDiv a:hover {
+            text-decoration: none;
+            background-color: #6386DD;
+        }
+
+.main-large {
+    width: calc(750px + 20px);
+}
+
+.main-large-map {
+    width: calc(100vw - 750px - 20px);
+    left: 770px !important;
+}
+
+#collapseSearch {
+    scrollbar-width: thin;
+}
+
+
+.calcite-panels-right {
+    top: 116px !important;
+    right: 45px !important;
+}
+
+.buttonPortal {
+    padding: 5px 5px 16px 5px !important;
+    margin-top: 10px !important;
+    font-size: 13px !important;
+    margin-right: 10px;
+}
+
+.buttonPortalActive {
+    border-bottom: 4px solid #F4A833;
+    color: #F4A833 !important;
+    background-image: none !important;
+    background: transparent !important;
+}
+
+.buttonPortalHover {
+    background-image: none !important;
+    background: transparent !important;
+}
+
+    .buttonPortalHover:hover {
+        text-decoration: none;
+        border-bottom: 4px solid #F4A833;
+    }
+
+    .buttonPortalHover:focus {
+        text-decoration: none;
+        border-bottom: 4px solid #F4A833;
+    }
+
+.buttonPortal2 {
+    padding: 5px !important;
+    border-radius: 5px !important;
+    margin-top: 10px !important;
+    background: #6445E1 !important;
+}
+
+.buttonPortalHover2:hover {
+    text-decoration: none;
+    background-image: none !important;
+}
+
+.calcite-title-main-text {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    height: 100%;
+}
+
+.small-heading:not(.active) {
+    display: none;
+}
+
+#menuItem.small-heading {
+    display: block;
+    margin-right: 10px;
+}
+
+#menuItem.large-heading {
+    display: none;
+}
+
+#panelSearchFiltros {
+    position: sticky;
+    background: #FAFAFA;
+    border-radius: 5px;
+    width: 310px;
+    border: 1px solid lightgray;
+    margin: 10px;
+}
+
+#searchSliderContainer {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#panelSearchResultados {
+    background: white;
+    padding: 0px;
+    margin: 0px;
+    box-shadow: 1px 0px 18px -5px #aaa;
+}
+
+#panelSearchNivel1 {
+    padding: 20px;
+    min-height: calc(100vh - 60px);
+}
+
+#panelSearchServicioDetalle {
+    min-height: calc(100vh - 60px);
+}
+
+#panelSearchEstacionDetalle {
+    min-height: calc(100vh - 60px);
+}
+
+#panelSearchPlanchaDetalle {
+    min-height: calc(100vh - 60px);
+}
+
+#panelSearchPlanchaAgroDetalle {
+    min-height: calc(100vh - 60px);
+}
+
+#panelSearchRinexDetalle {
+    min-height: calc(100vh - 60px);
+}
+
+#panelSearchImagenDetalle {
+    min-height: calc(100vh - 60px);
+}
+
+#panelSearchNivelLimites {
+    min-height: calc(100vh - 60px);
+}
+
+#searchServiciosTitle {
+    margin-bottom: 20px;
+}
+
+#searchServiciosDescripcion,
+#searchGeodesiaDescripcion,
+#searchEstacionesDescripcion,
+#searchImagenesDescripcion,
+#searchPlanchasAgroDescripcion,
+#searchPlanchasDescripcion,
+#searchLimitesDescripcion {
+    font-size: 14px;
+    line-height: 1.1em;
+    margin-bottom: 20px;
+}
+
+.header-tematica {
+    height: 60px;
+    background-size: 20px, cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+#select2-searchFiltroTematica-results .select2-results__option {
+    padding: 4px;
+}
+
+#select2-searchFiltroTematica-container {
+    padding-top: 3px;
+}
+
+.small-text-tematica {
+    vertical-align: top;
+    height: 25px;
+    display: inline-block;
+    padding-top: 5px;
+    line-height: 1.1em;
+}
+
+.small-icon-tematica {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    border-radius: 5px;
+    background-size: 13px, cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+.main-small .header-tematica {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 5px;
+    background-blend-mode: color-burn;
+}
+
+#panelcomunicacionA {
+    position: sticky;
+    background: white;
+    border-radius: 5px;
+    width: 300px;
+    border: 1px solid lightgray;
+    margin: 10px;
+}
+
+.small-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 5px;
+    background-size: 0px, cover !important;
+}
+
+.main-small #panelSearchResultados {
+    width: 310px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.tutorialMode {
+    border: 5px solid #6445E1 !important;
+    border-radius: 10px !important;
+}
+
+#alertList {
+    position: absolute;
+    right: 50px;
+    z-index: 1000000;
+    top: 15px;
+}
+
+.alert-header {
+    height: 5px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.alert-media {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+}
+
+.alert-media-body {
+    line-height: 1.2em;
+}
+
+.alert-body {
+    border-bottom-right-radius: 5px;
+    padding-top: 0px;
+    border-bottom-left-radius: 5px;
+    background: white;
+    padding-top: 5px;
+}
+
+.popover-tutorial-title > img {
+    height: 20px;
+    vertical-align: text-top;
+}
+
+.popover-tutorial-header {
+    padding: 0px;
+    border: none;
+}
+
+.popover-tutorial-close {
+    border: none;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+}
+
+.popover-tutorial {
+    width: 270px;
+    font-size: 14px !important;
+    padding: 20px 20px 0px 20px;
+    font-family: unset;
+    font-style: normal;
+    font-weight: unset;
+}
+
+.btn-tutorial {
+    background-color: #6445E1;
+    float: right;
+}
+
+.popover-tutorial-footer {
+    text-align: center;
+    padding-top: 10px;
+    line-height: 2.5em;
+}
+
+.popover-tutorial-content {
+    padding: 0px;
+}
+
+.popover-tutorial-content2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.popover-tutorial-title {
+    color: #6445E1;
+    font-size: 20px;
+}
+
+.main-small #containerFiltros {
+    position: unset;
+}
+
+.main-large #containerFiltros {
+    float: left;
+    overflow-y: auto;
+}
+
+/*
+.main-large #containerFiltros {
+    float: left;
+    position: fixed;
+    overflow-y: auto;
+    height: calc(100vh - 60px);
+    scrollbar-width: thin;
+}
+*/
+
+.main-large #panelSearchResultados {
+    width: 400px;
+    float: right;
+}
+
+#encuestaBtn {
+    background: #6445E1;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#userPhoto {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding-right: unset;
+    padding-left: unset;
+}
+
+.back-btn {
+    float: left;
+    top: -35px;
+    position: relative;
+}
+
+.panel-resultados .panel-body {
+    padding-bottom: 5px;
+}
+
+
+.panel-resultados-categoria {
+}
+
+.titulo-detalle {
+    padding-top: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1em;
+    word-break: break-all;
+}
+
+.titulo-interior2 {
+    color: #3595E0;
+}
+
+.titulo-interior {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 6px;
+    line-height: 1.2em;
+    margin-top: 0px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+}
+
+.panel-resultados-titulo {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1em;
+    padding-bottom: 5px;
+    word-break: break-all;
+}
+
+.panel-resultados-descripcion {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 13px;
+    line-height: 1.2em;
+}
+
+
+.panel-resultados-titulo2 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1em;
+}
+
+.panel-resultados-descripcion2 {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    line-height: 1.2em;
+}
+
+    .panel-resultados-descripcion2 a {
+        text-decoration: underline;
+    }
+
+.panel-resultados-media-header {
+    display: block;
+    width: unset;
+}
+
+
+.panel-resultados-media-right {
+}
+
+.panel-resultados2 {
+    margin: 0px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+    .panel-resultados2 .panel-body {
+        align-content: center;
+        display: grid;
+        min-height: 100px;
+    }
+
+
+.panel-resultados {
+    margin: 0px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.panel-default {
+    border: none;
+}
+
+.panel-resultados-thumb-header {
+    cursor: pointer;
+    height: 80px;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    width: 100%;
+    margin: 0px;
+}
+
+.panel-resultados-thumb {
+    cursor: pointer;
+    width: 120px;
+    height: 80px;
+    margin: 10px 18px 10px 10px;
+    border-radius: 10px;
+    background-size: 20px, cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+.panel-consulta-thumb {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 10px 18px 10px 10px;
+    border-radius: 10px;
+    background-size: 20px, cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+.panel-resultados-thumb-prev {
+    cursor: pointer;
+    width: 120px;
+    height: 80px;
+    margin: 10px 18px 10px 10px;
+    border-radius: 10px;
+    background-size: cover !important;
+    background-image: url('https://via.placeholder.com/120x80');
+    background-position: center;
+}
+
+.panel-resultados-tags {
+    display: block;
+    border-top: 1px solid lightgray;
+    width: calc(100% - 20px);
+    padding: 6px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.panel-consultas-tags {
+    display: block;
+    border-top: 1px solid lightgray;
+    width: calc(100% - 20px);
+    padding: 10px 0px 10px 10px;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 13px;
+    margin-left: 5px;
+    font-style: italic;
+    color: gray;
+    line-height: 1.1em;
+}
+
+
+    .panel-resultados-tags .label {
+        font-size: 12px;
+        font-weight: normal;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        padding: 5px;
+        display: inline-block;
+    }
+
+.cubrimiento-text {
+    color: #8E338C;
+    font-weight: bold;
+}
+
+#searchServiciosBtnGrid i, #searchServiciosBtnList i,
+#searchImagenesBtnGrid i, #searchImagenesBtnList i,
+#searchEstacionesBtnGrid i, #searchEstacionesBtnList i,
+#searchPlanchasAgroBtnGrid i, #searchPlanchasAgroBtnList i
+#searchPlanchasBtnGrid i, #searchPlanchasBtnList i {
+    color: lightgray;
+}
+
+#searchServiciosBtnGrid.active, #searchServiciosBtnList.active,
+#searchImagenesBtnGrid.active, #searchImagenesBtnList.active,
+#searchEstacionesBtnGrid.active, #searchEstacionesBtnList.active,
+#searchPlanchasAgroBtnGrid.active, #searchPlanchasAgroBtnList.active
+#searchPlanchasBtnGrid.active, #searchPlanchasBtnList.active {
+    border: none;
+    background: none;
+    box-shadow: unset;
+}
+
+
+    #searchServiciosBtnGrid.active i, #searchServiciosBtnList.active i,
+    #searchImagenesBtnGrid.active i, #searchImagenesBtnList.active i,
+    #searchEstacionesBtnGrid.active i, #searchEstacionesBtnList.active i,
+    #searchPlanchasAgroBtnGrid.active i, #searchPlanchasAgroBtnList.active i
+    #searchPlanchasBtnGrid.active i, #searchPlanchasBtnList.active i {
+        color: #3F93D0 !important;
+    }
+
+.volver-btn {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    padding-top: 3px;
+}
+
+.main-small .panel-resultados-thumb {
+    width: 100px;
+    height: 85px;
+}
+
+.main-small .panel-resultados-thumb-prev {
+    width: 100px;
+    height: 85px;
+}
+
+.main-small .panel-resultados-titulo2 {
+    font-size: 16px;
+}
+
+.main-small .panel-resultados-descripcion2 {
+    font-size: 12px;
+}
+
+
+.panel-resultados-media-thumb {
+    margin-top: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin-bottom: 15px;
+}
+
+#panelSearchPlanchasThumb {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+#panelSearchPlanchasAgroThumb {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.media-resultados {
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+    .media-resultados .btn-resultados {
+        display: none;
+    }
+
+    .media-resultados:hover {
+        border: 1px solid #3F93D0;
+    }
+
+        .media-resultados:hover .btn-resultados {
+            display: block;
+        }
+
+.btn-resultados3 {
+    height: 25px;
+    width: 25px;
+}
+
+    .btn-resultados3 img {
+        display: none;
+    }
+
+tr:hover .btn-resultados3 img {
+    display: block;
+}
+
+.media-resultados2 {
+    cursor: pointer;
+    border-bottom: 1px solid lightgray;
+    margin: 0px;
+    border-left: 2px solid transparent;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+    .media-resultados2 .btn-resultados2 img {
+        display: none;
+    }
+
+    .media-resultados2:hover {
+        background-color: #F1F7F9;
+        border-left: 2px solid #3F93D0;
+    }
+
+        .media-resultados2:hover .panel-resultados2 {
+            background-color: #F1F7F9;
+        }
+
+        .media-resultados2:hover .btn-resultados2 img {
+            display: block;
+        }
+
+.media-resultados3 {
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.btn-resultados {
+    width: 25px;
+    height: 25px;
+    float: right;
+    top: calc(50% - 12.5px);
+    position: relative;
+    right: -9px;
+}
+
+.btn-resultados2 {
+    width: 25px;
+    height: 25px;
+    float: right;
+    position: relative;
+    top: 40px;
+}
+
+#certificaDivContainer {
+    
+}
+
+.certificaCoordenadas {
+    margin-bottom: 10px;
+    background-color: #F2F2F2;
+    padding: 10px 0px 10px 0px;
+    border-radius: 10px;
+}
+
+.certificaCoordenadasX {
+    width: 50%;
+    display: inline-block;
+    border-right: 1px solid lightgray;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+.certificaCoordenadasY {
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+
+#measureDivContainer {
+    background-color: #F2EFE9;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#measureDivArea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #DBD8D2;
+    margin-top: 10px;
+}
+
+#measureDivLength {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #DBD8D2;
+    margin-top: 10px;
+}
+
+.calcite-maps .tooltip .tooltip-arrow {
+    border-bottom-color: transparent;
+}
+
+.tooltip-class-carac {
+    padding: 10px;
+    font-size: 18px;
+    color: #3168E4;
+}
+
+.tooltip-class {
+    padding: 1px;
+    font-size: 17px;
+    color: #3168E4;
+}
+
+.calcite-maps .tooltip-innerX {
+    color: white;
+    width: 160px;
+    font-size: 14px;
+    background-color: #3168E4;
+}
+
+.btn1-2 {
+    width: calc(50% - 20px) !important;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.btn2-2 {
+    width: calc(50% - 20px) !important;
+    margin-left: 10px;
+}
+
+.tooltipX.right .tooltip-arrowX {
+    border-right-color: #3168E4;
+}
+
+.calcite-maps .tooltipX .tooltip-arrowX {
+    border-bottom-color: transparent;
+}
+
+.tooltipX {
+    font-family: unset;
+    position: absolute;
+    z-index: 107000;
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: normal;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    line-break: auto;
+}
+
+    .tooltipX.right {
+        margin-left: 3px;
+        padding: 0 5px;
+    }
+
+.tooltip-arrowX {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.tooltipX.right .tooltip-arrowX {
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+    border-width: 5px 5px 5px 0;
+}
+
+.tooltip-innerX {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    color: white !important;
+}
+
+#toolBtn {
+    color: white;
+}
+
+#searchBtn {
+    background-color: #FAB900;
+    border-color: transparent;
+}
+
+#searchTxt {
+    border: none;
+    font-size: 14px;
+    width: calc(25vw);
+}
+
+    #searchTxt:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+#searchCategoriasBtn {
+    border-color: transparent;
+    border: none;
+    font-size: 14px;
+    height: 34px;
+}
+
+#drawCurrentTool {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#resultadoCoordenadas {
+    margin-top: 10px;
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#resultadoCoordenadasX {
+    width: 50%;
+    display: inline-block;
+    border-right: 1px solid lightgray;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+#resultadoCoordenadasY {
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+#resultadoCatastralCoordenadas {
+    margin-top: 10px;
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#resultadoCatastralCoordenadasX {
+    width: 45%;
+    display: inline-block;
+    border-right: 1px solid lightgray;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+#resultadoCatastralCoordenadasY {
+    width: 45%;
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+#resultadoUsoSueloCoordenadas {
+    margin-top: 10px;
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#resultadoUsoSueloCoordenadasX {
+    width: 45%;
+    display: inline-block;
+    border-right: 1px solid lightgray;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+#resultadoUsoSueloCoordenadasY {
+    width: 45%;
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+#htmlShare {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #F2EFE9;
+    padding: 5px;
+}
+
+#urlShareQR {
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+    #urlShareQR > img {
+        width: 50%;
+        display: inline-block !important;
+    }
+
+#coordPanel {
+    margin-bottom: 10px;
+    padding: 15px 0px 0px 15px;
+    border: none;
+    background: #FAFAFA;
+}
+
+    #coordPanel > li.active > a {
+        border: none;
+        border-bottom: 1px solid #3595E0;
+        background: #FAFAFA;
+    }
+
+    #coordPanel > li > a:hover {
+        border: none;
+        border-bottom: 1px solid #3595E0 !important;
+        background: #FAFAFA !important;
+    }
+
+#usosueloPanel {
+    margin-bottom: 10px;
+    padding: 15px 0px 0px 15px;
+    border: none;
+    background: #FAFAFA;
+}
+
+    #usosueloPanel > li.active > a {
+        border: none;
+        border-bottom: 1px solid #3595E0;
+        background: #FAFAFA;
+    }
+
+    #usosueloPanel > li > a:hover {
+        border: none;
+        border-bottom: 1px solid #3595E0 !important;
+        background: #FAFAFA !important;
+    }
+
+#agroPanel {
+    margin-bottom: 10px;
+    padding: 15px 0px 0px 15px;
+    border: none;
+    background: #FAFAFA;
+}
+
+    #agroPanel > li.active > a {
+        border: none;
+        border-bottom: 1px solid #3595E0;
+        background: #FAFAFA;
+    }
+
+    #agroPanel > li > a:hover {
+        border: none;
+        border-bottom: 1px solid #3595E0 !important;
+        background: #FAFAFA !important;
+    }
+
+
+#catastralPanel {
+    margin-bottom: 10px;
+    padding: 15px 0px 0px 15px;
+    border: none;
+    background: #FAFAFA;
+}
+
+    #catastralPanel > li.active > a {
+        border: none;
+        border-bottom: 1px solid #3595E0;
+        background: #FAFAFA;
+    }
+
+    #catastralPanel > li > a:hover {
+        border: none;
+        border-bottom: 1px solid #3595E0 !important;
+        background: #FAFAFA !important;
+    }
+
+#construccionesCatrastral {
+    color: #4c4c4c;
+}
+
+#usosueloPanel {
+    margin-bottom: 10px;
+    padding: 15px 0px 0px 15px;
+    border: none;
+    background: #FAFAFA;
+}
+
+#usosueloPanel > li.active > a {
+    border: none;
+    border-bottom: 1px solid #3595E0;
+    background: #FAFAFA;
+}
+
+    #usosueloPanel > li > a:hover {
+        border: none;
+        border-bottom: 1px solid #3595E0 !important;
+        background: #FAFAFA !important;
+    }
+
+.nav-pills > li > a {
+    color: black;
+    background-color: white;
+    font-weight: normal;
+}
+
+.nav-pills > li.active > a {
+    background-color: darkgray;
+    padding: 10px 15px !important;
+}
+
+    .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+        background-color: darkgray;
+    }
+
+
+.subtematica {
+    padding-left: 1em;
+}
+
+.tematica {
+}
+
+.DEPTO {
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+.ALL {
+    font-weight: bold;
+}
+
+.PAIS {
+    font-weight: bold;
+}
+
+.MUNI {
+    padding-left: 1em;
+    padding-left: 2em;
+    font-style: italic;
+}
+
+#panelSearchCaracterizacionTitulo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#panelSearchCaracterizacionTable a {
+    text-decoration: underline;
+}
+
+#panelSearchCaracterizacionTable {
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.3em;
+}
+
+select.input-sm {
+    line-height: 20px;
+}
+
+.btn-interior {
+    width: 120px;
+}
+
+#searchHeader {
+    background-color: #3F93D0;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#detallePlanchaThumbTools {
+    left: calc(100% - 61px);
+    position: relative;
+    top: calc(100% - 36px);
+    background: #F2EFE9;
+    width: 58px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+#detallePlanchaThumb {
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position-y: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0,0, 0.05);
+}
+
+#detallePlanchaAgroThumbTools {
+    left: calc(100% - 61px);
+    position: relative;
+    top: calc(100% - 36px);
+    background: #F2EFE9;
+    width: 58px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+#detallePlanchaAgroThumb {
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position-y: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0,0, 0.05);
+}
+
+#detalleImagenThumbTools {
+    left: calc(100% - 61px);
+    position: relative;
+    top: calc(100% - 36px);
+    background: #F2EFE9;
+    width: 58px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+#detalleImagenThumb {
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#searchCartoDescripcion {
+    line-height: 1.1em;
+}
+
+#detalleCartoThumb {
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position-y: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0,0, 0.05);
+}
+
+#detalleEstacionThumb {
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position-y: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#detalleRinexThumb {
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position-y: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+#detalleServicioThumb {
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position-y: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.detalleCol1 {
+    display: inline-block;
+    width: 28%;
+}
+
+.detalleCol2 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    width: 70%;
+}
+
+#tableSearchBniTable tr {
+    cursor: pointer;
+}
+
+    #tableSearchBniTable tr:hover {
+        background-color: #F1F7F9;
+    }
+
+        #tableSearchBniTable tr:hover td:first-child {
+            border-left: 2px solid #3F93D0;
+        }
+
+    #tableSearchBniTable tr td:first-child {
+        border-left: 2px solid transparent;
+    }
+
+#tableSearchBni {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#tableSearchBni_wrapper {
+    
+}
+
+    #tableSearchBni_wrapper > .bottom > .dataTables_info {
+        white-space: nowrap;
+        background-color: #F2EFE9;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding: 20px 20px 10px 20px;
+    }
+
+#tableSearchBni_length {
+    white-space: nowrap;
+    background-color: #F2EFE9;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0px 20px 10px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    #tableSearchBni_length > label {
+        width: 100% !important;
+    }
+
+        #tableSearchBni_length > label > select {
+            width: 100% !important;
+        }
+
+#tableSearchBni,.dataTables_paginate {
+    text-align: center !important;
+}
+
+    #tableSearchBni,.dataTables_paginate a {
+        border: none !important;
+    }
+
+
+#tableSearchBniTable tr {
+    cursor: pointer;
+}
+
+    #tableSearchBniTable tr:hover {
+        background-color: #F1F7F9;
+    }
+
+        #tableSearchBniTable tr:hover td:first-child {
+            border-left: 2px solid #3F93D0;
+        }
+
+    #tableSearchBniTable tr td:first-child {
+        border-left: 2px solid transparent;
+    }
+
+#tableSearchBni2 {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#tableSearchBni2_wrapper {
+}
+
+    #tableSearchBni2_wrapper > .bottom > .dataTables_info {
+        white-space: nowrap;
+        background-color: #F2EFE9;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding: 20px 20px 10px 20px;
+    }
+
+#tableSearchBni2_length {
+    white-space: nowrap;
+    background-color: #F2EFE9;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0px 20px 10px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    #tableSearchBni2_length > label {
+        width: 100% !important;
+    }
+
+        #tableSearchBni2_length > label > select {
+            width: 100% !important;
+        }
+
+#tableSearchBni2, .dataTables_paginate {
+    text-align: center !important;
+}
+
+    #tableSearchBni2, .dataTables_paginate a {
+        border: none !important;
+    }
+
+#tableSearchDeptosTable tr {
+    cursor: pointer;
+}
+
+    #tableSearchDeptosTable tr:hover {
+        background-color: #F1F7F9;
+    }
+
+        #tableSearchDeptosTable tr:hover td:first-child {
+            border-left: 2px solid #3F93D0;
+        }
+
+    #tableSearchDeptosTable tr td:first-child {
+        border-left: 2px solid transparent;
+    }
+
+#tableSearchDeptos_wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+    #tableSearchDeptos_wrapper > .bottom > .dataTables_info {
+        white-space: nowrap;
+        background-color: #F2EFE9;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding: 20px 20px 10px 20px;
+    }
+
+#tableSearchDeptos_length {
+    white-space: nowrap;
+    background-color: #F2EFE9;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0px 20px 10px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    #tableSearchDeptos_length > label {
+        width: 100% !important;
+    }
+
+        #tableSearchDeptos_length > label > select {
+            width: 100% !important;
+        }
+
+#tableSearchDeptos_paginate {
+    text-align: center;
+}
+
+    #tableSearchDeptos_paginate a {
+        border: none;
+    }
+
+#tableSearchCartoTable tr {
+    cursor: pointer;
+}
+
+    #tableSearchCartoTable tr:hover {
+        background-color: #F1F7F9;
+    }
+
+        #tableSearchCartoTable tr:hover td:first-child {
+            border-left: 2px solid #3F93D0;
+        }
+
+    #tableSearchCartoTable tr td:first-child {
+        border-left: 2px solid transparent;
+    }
+
+#tableSearchCarto_wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+    #tableSearchCarto_wrapper > .bottom > .dataTables_info {
+        white-space: nowrap;
+        background-color: #F2EFE9;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding: 20px 20px 10px 20px;
+    }
+
+#tableSearchCarto_length {
+    white-space: nowrap;
+    background-color: #F2EFE9;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0px 20px 10px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    #tableSearchCarto_length > label {
+        width: 100% !important;
+    }
+
+        #tableSearchCarto_length > label > select {
+            width: 100% !important;
+        }
+
+#tableSearchCarto_paginate {
+    text-align: center;
+}
+
+    #tableSearchCarto_paginate a {
+        border: none;
+    }
+
+#tableSearchEstaciones tr {
+    cursor: pointer;
+}
+
+    #tableSearchEstaciones tr:hover {
+        background-color: #F1F7F9;
+    }
+
+        #tableSearchEstaciones tr:hover td:first-child {
+            border-left: 2px solid #3F93D0;
+        }
+
+    #tableSearchEstaciones tr td:first-child {
+        border-left: 2px solid transparent;
+    }
+
+#tableSearchEstaciones_wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+    #tableSearchEstaciones_wrapper > .bottom > .dataTables_info {
+        white-space: nowrap;
+        background-color: #F2EFE9;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding: 20px 20px 10px 20px;
+    }
+
+#tableSearchEstaciones_length {
+    white-space: nowrap;
+    background-color: #F2EFE9;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0px 20px 10px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    #tableSearchEstaciones_length > label {
+        width: 100% !important;
+    }
+
+        #tableSearchEstaciones_length > label > select {
+            width: 100% !important;
+        }
+
+#tableSearchEstaciones_paginate {
+    text-align: center;
+}
+
+    #tableSearchEstaciones_paginate a {
+        border: none;
+    }
+
+#tableSearchRinex tr {
+    cursor: pointer;
+}
+
+    #tableSearchRinex tr:hover {
+        background-color: #F1F7F9;
+    }
+
+        #tableSearchRinex tr:hover td:first-child {
+            border-left: 2px solid #3F93D0;
+        }
+
+    #tableSearchRinex tr td:first-child {
+        border-left: 2px solid transparent;
+    }
+
+#tableSearchRinex_wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+    #tableSearchRinex_wrapper > .bottom > .dataTables_info {
+        white-space: nowrap;
+        background-color: #F2EFE9;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding: 20px 20px 10px 20px;
+    }
+
+#tableSearchRinex_length {
+    white-space: nowrap;
+    background-color: #F2EFE9;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0px 20px 10px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    #tableSearchRinex_length > label {
+        width: 100% !important;
+    }
+
+        #tableSearchRinex_length > label > select {
+            width: 100% !important;
+        }
+
+#tableSearchRinex_paginate {
+    text-align: center;
+}
+
+    #tableSearchRinex_paginate a {
+        border: none;
+    }
+
+#tableSearchPlanchas tr {
+    cursor: pointer;
+}
+
+    #tableSearchPlanchas tr:hover {
+        background-color: #F1F7F9;
+    }
+
+        #tableSearchPlanchas tr:hover td:first-child {
+            border-left: 2px solid #3F93D0;
+        }
+
+    #tableSearchPlanchas tr td:first-child {
+        border-left: 2px solid transparent;
+    }
+
+#tableSearchPlanchas_wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+    #tableSearchPlanchas_wrapper > .bottom > .dataTables_info {
+        white-space: nowrap;
+        background-color: #F2EFE9;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding: 20px 20px 10px 20px;
+    }
+
+#tableSearchPlanchas_length {
+    white-space: nowrap;
+    background-color: #F2EFE9;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0px 20px 10px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    #tableSearchPlanchas_length > label {
+        width: 100% !important;
+    }
+
+        #tableSearchPlanchas_length > label > select {
+            width: 100% !important;
+        }
+
+#tableSearchPlanchas_paginate {
+    text-align: center;
+}
+
+    #tableSearchPlanchas_paginate a {
+        border: none;
+    }
+
+#tableSearchPlanchasAgro tr {
+    cursor: pointer;
+}
+
+    #tableSearchPlanchasAgro tr:hover {
+        background-color: #F1F7F9;
+    }
+
+        #tableSearchPlanchasAgro tr:hover td:first-child {
+            border-left: 2px solid #3F93D0;
+        }
+
+    #tableSearchPlanchasAgro tr td:first-child {
+        border-left: 2px solid transparent;
+    }
+
+#tableSearchPlanchasAgro_wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+    #tableSearchPlanchasAgro_wrapper > .bottom > .dataTables_info {
+        white-space: nowrap;
+        background-color: #F2EFE9;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding: 20px 20px 10px 20px;
+    }
+
+#tableSearchPlanchasAgro_length {
+    white-space: nowrap;
+    background-color: #F2EFE9;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0px 20px 10px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    #tableSearchPlanchasAgro_length > label {
+        width: 100% !important;
+    }
+
+        #tableSearchPlanchasAgro_length > label > select {
+            width: 100% !important;
+        }
+
+#tableSearchPlanchasAgro_paginate {
+    text-align: center;
+}
+
+    #tableSearchPlanchasAgro_paginate a {
+        border: none;
+    }
+
+#tableSearchServicios tr {
+    cursor: pointer;
+}
+
+    #tableSearchServicios tr:hover {
+        background-color: #F1F7F9;
+    }
+
+        #tableSearchServicios tr:hover td:first-child {
+            border-left: 2px solid #3F93D0;
+        }
+
+    #tableSearchServicios tr td:first-child {
+        border-left: 2px solid transparent;
+    }
+
+#tableSearchServicios_wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+    #tableSearchServicios_wrapper > .bottom > .dataTables_info {
+        white-space: nowrap;
+        background-color: #F2EFE9;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding: 20px 20px 10px 20px;
+    }
+
+#tableSearchServicios_length {
+    white-space: nowrap;
+    background-color: #F2EFE9;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0px 20px 10px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    #tableSearchServicios_length > label {
+        width: 100% !important;
+    }
+
+        #tableSearchServicios_length > label > select {
+            width: 100% !important;
+        }
+
+#tableSearchServicios_paginate {
+    text-align: center;
+}
+
+    #tableSearchServicios_paginate a {
+        border: none;
+    }
+
+
+.select2-selection__arrow {
+    display: none;
+}
+
+.select2-selection {
+    background-image: url(/images/select.svg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position-y: 7px;
+    padding-right: 18px;
+}
+
+.colorpicker-visible {
+    z-index: 100000;
+}
+
+.datepicker-dropdown {
+    z-index: 100000;
+}
+
+#searchServiciosList {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#panelSearch {
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+#collapseSearch {
+    overflow: hidden;
+}
+
+#panelSearchCaracterizacion {
+    border: none !important;
+    cursor: unset !important;
+}
+
+#panelSearchCaracterizacionContainer {
+    border: none !important;
+    min-height: unset;
+    background-color: #F2EFE9 !important;
+}
+
+.panel-limites-container {
+    background-color: #F2EFE9;
+    border-radius: 10px;
+    padding-top: 0px;
+    margin-bottom: 10px;
+}
+
+.panel-limites {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #DBD8D2;
+    margin-top: 10px;
+}
+
+body.dragging, body.dragging * {
+    cursor: move !important;
+}
+
+.dragged {
+    position: absolute;
+    opacity: 0.5;
+    z-index: 2000;
+}
+
+.sort-placeholder {
+    border: 5px solid transparent;
+    border-left-color: red;
+    margin-top: -5px;
+    top: 0;
+    left: 10px;
+    border-right: none;
+}
+
+#locateButton {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 99;
+    display: block;
+    right: 17px;
+    bottom: 108px;
+}
+
+#homeButton {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 99;
+    display: block;
+    right: 17px;
+    bottom: 145px;
+}
+
+.calcite .LocateButton .zoomLocateButton {
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url(/images/iconos/Center.png);
+    background-size: contain;
+    background-color: transparent !important;
+}
+
+    .calcite .LocateButton .zoomLocateButton::before {
+        content: none;
+    }
+
+.calcite .HomeButton .home {
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url(/images/iconos/HomeExtent.png);
+    background-size: contain;
+    background-color: transparent !important;
+}
+
+    .calcite .HomeButton .home::before {
+        content: none;
+    }
+
+.calcite .esriSimpleSlider {
+    right: 17px;
+    border-radius: 10px;
+    background-image: url(/images/iconos/ZoomBox.png);
+    background-size: contain;
+    background-color: transparent;
+}
+
+.esriSimpleSliderIncrementButton {
+    opacity: 1 !important;
+    border: none;
+    background-color: transparent !important;
+    background-image: url(/images/iconos/ZoomIn.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.calcite .esriSimpleSlider .esriSimpleSliderIncrementButton::before {
+    content: none;
+}
+
+.esriSimpleSliderDecrementButton {
+    opacity: 1 !important;
+    background-color: transparent !important;
+    background-image: url(/images/iconos/ZoomOut.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.calcite .esriSimpleSlider .esriSimpleSliderDecrementButton::before {
+    content: none;
+}
+
+.modal {
+    text-align: center;
+    padding: 0 !important;
+}
+
+    .modal:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -4px; /* Adjusts for spacing */
+    }
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+
+#detalleImagenAlerta {
+    margin-top: 15px;
+    line-height: 1.1em;
+}
+
+#detalleImagenAlerta2 {
+    margin-top: 15px;
+    line-height: 1.1em;
+}
+
+#terminosAlerta {
+    color: red;
+}
+
+#licenciaAlerta {
+    color: red;
+}
+
+#detalleServicioAlerta {
+    margin-top: 15px;
+    line-height: 1.1em;
+    margin-bottom: 0px;
+}
+
+#detalleServicioBtn {
+    margin-top: 15px;
+}
+
+#detalleCartoAlerta {
+    margin-top: 15px;
+    line-height: 1.1em;
+}
+
+
+#detalleEstacionAlerta {
+    line-height: 1.1em;
+}
+
+.buttonCaract1 {
+    width: 45%;
+    padding: 2px;
+    margin-right: 10px;
+}
+
+.main-small .buttonCaract1 {
+    width: 100% !important;
+    margin-bottom: 10px !important;
+    padding: 2px;
+}
+
+.buttonCaract2 {
+    width: 50%;
+    padding: 2px;
+}
+
+.main-small .buttonCaract2 {
+    width: 100% !important;
+    padding: 2px;
+}
+
+#searchBar {
+    height: 60px;
+    padding: 10px;
+    background-color: #FAFAFA;
+}
+
+#searchBarTab {
+    background-color: #FAFAFA;
+}
+
+    #searchBarTab > .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+        font-weight: bold;
+        border-bottom: 1px #3595E0 solid !important;
+    }
+
+.pillsearch {
+    font-size: 14px;
+    border: none !important;
+    background: none !important;
+    margin: 5px 10px 0px 10px !important;
+    padding: 5px !important;
+    color: gray;
+}
+
+.typeahead__container {
+    font: unset;
+}
+
+.typeahead__group-search {
+    border: none !important;
+}
+
+.searchCtrl {
+    height: 40px !important;
+    margin-top: 9px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    font-size: 14px !important;
+    background: white !important;
+    border-radius: 5px !important;
+}
+
+.typeahead__cancel-button {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    bottom: 0;
+    height: 14px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.searchTextBtn {
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    bottom: 0;
+    height: 14px;
+    margin: auto;
+    font-size: 14px;
+    cursor: pointer;
+    color: #69F;
+}
+
+#panelSearchTxtResultados .typeahead__list {
+    position: unset;
+    border: unset;
+}
+
+#certificacionCoordenadas2 {
+    line-height: 1.3em;
+}
+
+#certificacionCoordenadas1 {
+    line-height: 1.3em;
+}
+
+#drawList {
+    padding-top: 10px;
+}
+
+.tableusoc1 {
+    width: 60px;
+    vertical-align: top;
+    padding-top: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.tableusoc2 {
+    display: inline-block;
+    padding-top: 5px;
+    vertical-align: top;
+    width: calc(100% - 140px);
+    word-wrap: anywhere;
+}
+
+.tableusoc2b {
+    display: inline-block;
+    padding-top: 5px;
+    vertical-align: top;
+    width: calc(100% - 120px);
+    word-wrap: anywhere;
+    line-height: 1em;
+}
+
+.tableusoc3 {
+    display: inline-block;
+    padding-top: 5px;
+    vertical-align: top;
+    width: 80px;
+    word-wrap: anywhere;
+}
+
+.tableusoc4 {
+    display: inline-block;
+    padding-top: 5px;
+    vertical-align: top;
+    width: 80px;
+    word-wrap: anywhere;
+}
+
+.tableusotr {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid lightgray;
+}
+
+.tableusoh {
+    text-align: center;
+    color: black;
+    background: #E5E5E5;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.panel-usos {
+    background-color: #FAFAFA;
+    color: black !important;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+}
+
+.pagina-reporte {
+    padding: 20px;
+}
+
+.tableusoc1-reporte {
+    width: 60px;
+    vertical-align: top;
+    padding-top: 5px;
+    display: inline-block;
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+
+.tableusoc2-reporte {
+    display: inline-block;
+    padding-top: 5px;
+    vertical-align: top;
+    width: 500px;
+    word-wrap: anywhere;
+    color: black;
+    background-color: white;
+}
+
+.tableusoc2b-reporte {
+    display: inline-block;
+    padding-top: 5px;
+    vertical-align: top;
+    width: 485px;
+    word-wrap: anywhere;
+    line-height: 1em;
+    color: black;
+    background-color: white;
+}
+
+.tableusoc3-reporte {
+    display: inline-block;
+    padding-top: 5px;
+    vertical-align: top;
+    width: 130px;
+    word-wrap: anywhere;
+    color: black;
+    background-color: white;
+}
+
+.tableusoc4-reporte {
+    display: inline-block;
+    padding-top: 5px;
+    vertical-align: top;
+    width: 80px;
+    word-wrap: anywhere;
+    color: black;
+    line-height: 1em;
+    background-color: white;
+}
+
+.tableusotr-reporte {
+    width: 100%;
+    border-top: 1px solid lightgray;
+    background-color: white;
+}
+
+.tableusoh-reporte {
+    color: black;
+    background-color: white;
+}
+
+.panel-usos-reporte {
+    background: white !important;
+    color: white !important;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+}
+
+#resultadoUsoSueloCoordenadas {
+    display: none !important;
+}
+
+.consulta-activa {
+    border: 1px solid gray;
+}
+
+#searchServiciosSubtematicas .label {
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 5px;
+    display: inline-block;
+}
+
+#resultadoConsultaCoordenadas {
+    margin-top: 10px;
+}
+
+
+
+/* barra govierno */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.barra_gov {
+    background-color: #3366cc !important;
+    width: 100%;
+    height: 48px;
+    padding: 0px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo-gov img {
+    height: 27px;
+}
+
+/* nav */
+.navbarigac {
+    position: sticky;
+    top: 0;
+    height: 60px;
+    background: #E9EAEB !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .navbarigac .logos {
+        display: flex;
+        align-items: center;
+    }
+
+.navbar-brand-igac {
+    order: 1;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.navbarigac img {
+    order: 2;
+    height: 52px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.navbar-brand-igac img {
+    max-height: 35px;
+    height: 35px;
+    min-height: 35px;
+    width: auto;
+    display: block;
+    padding: 0;
+}
+
+.navbarigac ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+    .navbarigac ul li {
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+    }
+
+        .navbarigac ul li a {
+            color: #666666;
+        }
+
+.nav-bar-toggle-igac {
+    display: none;
+    padding: 0 15px;
+    border: 0;
+    background: none;
+}
+
+    .nav-bar-toggle-igac .icon-bar {
+        display: block;
+        background: #666666;
+        width: 22px;
+        height: 2px;
+        margin-bottom: 4px;
+        border-radius: 1px;
+    }
+
+.navbarnavigac {
+    width: 100%;
+    position: absolute;
+    max-height: 0;
+    background: #E9EAEB !important;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+    .navbarnavigac.expandMenu {
+        max-height: 200px;
+        transition: all 0.6s ease;
+    }
+
+/* Footer*/
+footer {
+    padding-top: 1px;
+    background: #e6effd;
+    color: #000;
+}
+
+.footer-container {
+    margin-bottom: 50px !important;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    background: #fff;
+}
+
+footer .footer-titulo {
+    padding-top: 1rem;
+    font-family: 'Tajawal-Bold';
+    font-size: 1.3rem;
+}
+
+footer h2 {
+    font-size: 1.2rem;
+}
+
+footer h3 {
+    font-size: 1rem;
+}
+
+footer p {
+    color: #000;
+    font-size: .875rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem !important;
+}
+
+footer a {
+    color: #3366cc !important;
+    text-decoration: underline !important;
+}
+
+footer .footer-enlaces a {
+    font-family: 'Tajawal-Bold';
+    text-decoration: none !important;
+    text-transform: none;
+}
+
+footer .icono-redes {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+.gov-co-footer-auto {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+footer .gov-co-footer-pie {
+    background-color: #3366cc !important;
+    padding: 5px;
+}
+
+footer .gov-co-logo-pie-blanco {
+    width: auto;
+    height: 50px;
+    border-right: white solid 1px;
+    padding-right: 15px;
+}
+
+footer .gov-co-logo-pie-mesa {
+    width: auto;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Media querys */
+@media (max-width: 768px) {
+    .navbarigac ul {
+        display: none;
+    }
+
+    .nav-bar-toggle-igac {
+        display: block;
+    }
+
+    #link-list {
+        border-top: 1.5px solid #3366cc;
+        color: #666666;
+        padding: 0 1rem;
+        margin-bottom: 0;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+        #link-list li {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+        }
+
+            #link-list li a {
+                color: #666666;
+                line-height: normal;
+            }
+
+    .barra_gov {
+        justify-content: space-between;
+        padding-right: 0;
+    }
+}
+
+
+.map-table-view {
+    height: calc(100vh - 100px - 250px);
+}
+
+#tableViewDiv {
+    height: 250px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    z-index: 10;
+}
+
+#tableViewClose {
+    height: 20px;
+    background: red;
+    float: right;
+    width: 100%;
+}
+
+#tableView {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.calcite .dijitContentPane {
+    padding: 0px !important;
+}
+
+.esri-feature-table-hidden {
+    display: none !important;
+}
+
+.esri-feature-table-menu .esri-feature-table-menu-item {
+    padding-right: 10px;
+}
+
+.panel-heading-s {
+    padding: 1px;
+    color: white;
+    background-color: #3C3C3B !important;
+    float: right;
+    width: 100%;
+}
+
+.tematica-disable {
+    opacity: 0.6 !important;
+}
+
+#searchImagenesCloud .slider-selection {
+    background: lightgray;
+}
+
+#searchImagenesCloud .slider-handle {
+    background: lightgray;
+}
+
+#searchImagenesCloud {
+    width: calc(100% - 55px);
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#mosaicosToolBtn {
+    background-image: url(/images/iconos/mosaico.png);
+    top: 95px;
+}
+
+#layersToolBtn {
+    background-image: url(/images/iconos/mapa_base.png);
+    top: 55px;
+}
+
+@media (max-height: 767px) {
+    .calcite-panels .panel-body {
+        max-height: 450px;
+    }
+}

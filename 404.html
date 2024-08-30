@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="description" content="Colombia en Mapas, un atlas vivo. Conoce, descarga y comparte  los mapas oficiales de la República de Colombia." />
+    <meta name="keywords" content="mapa, mapas, Colombia, atlas, imágenes, cartografía, municipio, departamento, catastro, oficial, IGAC" />
+    <meta name="author" content="Instituto Geográfico Agustín Codazzi - IGAC" />
+    <meta name="title" property="og:title" content="Colombia en Mapas">
+    <meta property="og:type" content="website">
+    <meta name="image" property="og:image" content="https://www.colombiaenmapas.gov.co/images/Preview.png">
+    <meta http-equiv="content-language" content="es" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="canonical" href="https://www.colombiaot.gov.co" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <title>Colombia OT</title>
+
+    <link type="text/css" async rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.css" />
+    <link rel="stylesheet" href="/js/lib/dist/css/calcite-maps-bootstrap.min-v0.10.css">
+    <link rel="stylesheet" href="/js/lib/dist/css/calcite-maps-arcgis-3.x.min-v0.10.css">
+
+    <link rel="stylesheet" href="/../css/maestra.css">
+    <link rel="stylesheet" href="/../css/navbar-footer.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-78PPLF47WW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-78PPLF47WW');
+    </script>
+    <style>
+        .image-container {
+            padding: 80px 0;
+            max-width: 500px;
+            margin: auto;
+        }
+
+            .image-container .text {
+                font-size: 16px;
+                color: #878787;
+                text-align: center;
+                margin-top: -20px;
+            }
+    </style>
+</head>
+<body class="calcite calcite-nav-top">
+    <div class="barra_gov">
+        <a class="logo-gov" href="https://www.gov.co/home/" target="_blank">
+            <img alt="Logo Gov.co" src="/images/nav/header_govco.png">
+        </a>
+    </div>
+    <nav>
+        <div class="navbarigac">
+            <div class="logos">
+                <a href="https://www.igac.gov.co" class="navbar-brand-igac" target="_blank">
+                    <img alt="Logo IGAC" src="/images/nav/logo.png">
+                </a>
+                <img src="/images/nav/colombiaOT.svg" alt="Colombia OT">
+            </div>
+            <ul id="link-list">
+                <li>
+                    <a href="/" rel="noopener">Inicio</a>
+                </li>
+                <li>                    
+                    <a href="/pot/" rel="noopener">Los POT del país</a>
+                </li>
+                <li id="optionCargue" style="display: none;">
+                    <a href="/cargue/" rel="noopener">Cargue</a>
+                </li>
+                <li>
+                    <a class="collapse-button-1">Otros recursos 
+                        <img src="/images/nav/ico-arrow.png" alt=""> 
+                    </a>
+                    
+                    <ul id="collapse-menu-1" class="collapse-menu-1">
+                        <li>
+                            <a href="/cartillas/">Cartillas, gu&iacute;as y manuales</a>                            
+                            <img src="/images/nav/ico-arrow.png" alt="Cartillas, gu&iacute;as y manuales">
+                        </li>
+                        <li>
+                            <a href="/normatividad/">Normatividad</a>
+                            <img src="/images/nav/ico-arrow.png" alt="Normatividad">
+                        </li>
+                        <li>
+                            <a href="/datosot/">Datos para el OT</a>
+                            <img src="/images/nav/ico-arrow.png" alt="Datos para el OT">
+                        </li>
+                        <li>
+                            <a href="/aplicaciones/">Aplicaciones y herramientas</a>
+                            <img src="/images/nav/ico-arrow.png" alt="Aplicaciones y herramientas">
+                        </li>
+                        <li>
+                            <a href="/documentos/">Documentos t&eacute;cnicos</a>
+                            <img src="/images/nav/ico-arrow.png" alt="Documentos t&eacute;cnicos">
+                        </li>
+                        <li>
+                            <a href="/ruta/">La Ruta del POT</a>
+                            <img src="/images/nav/ico-arrow.png" alt="La Ruta del POT">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="collapse-button-2">Acerca de 
+                        <img src="/images/nav/ico-arrow.png" alt="Acerca de"> 
+                    </a>
+                    
+                    <ul id="collapse-menu-2" class="collapse-menu-2">
+                        <li>
+                            <a href="/acerca-de/">Qu&eacute; es el ordenamiento territorial (OT)</a>
+                            <img src="/images/nav/ico-arrow.png" alt="Que es">
+                        </li>
+                        <li>
+                            <a href="/acerca-de/colombia-ot-del-igac.html">Colombia OT del IGAC</a>
+                            <img src="/images/nav/ico-arrow.png" alt="Colombia OT">
+                        </li>
+                        <li>
+                            <a href="/acerca-de/actores-de-colombia-ot.html">Actores de Colombia OT</a>
+                            <img src="/images/nav/ico-arrow.png" alt="Actores">
+                        </li>
+                        <li>
+                            <a href="/acerca-de/ot_del_pais_en_cifras.html">El OT del pa&iacute;s en cifras</a>
+                            <img src="/images/nav/ico-arrow.png" alt="Cifras">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="loginBtn" onclick="gotoLogin();">
+                        <img id="userPhoto" src="/images/icono_ingreso.png" onerror="defaultUserPhoto();" alt="Iniciar sesion" />
+                        <span id="userName" style="display: none;">Iniciar sesion</span>
+                    </a>
+                </li>
+            </ul>
+            <button class='nav-bar-toggle-igac'>
+                <div class='icon-bar'></div>
+                <div class='icon-bar'></div>
+                <div class='icon-bar'></div>            </button>
+        </div>
+        <div class='navbarnavigac'>            
+        </div>
+    </nav>
+    
+    <section class="404 container">
+        <div class="image-container">
+            <img  src="/images/404/404.svg" alt="">
+            <div class="text">
+                <P>Página no encontrada</P>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="containerf">
+            <div class="footer-container">
+                <div class="rowf">
+                    <div class="col-md-6f">
+                        <h2 class="footer-titulo">Instituto Geográfico Agustín Codazzi - IGAC</h2>
+                    </div>
+                    <div class="logos-footer col-md-6f">&nbsp;</div>
+                </div>
+                <div class="rowf">
+                    <div class="col-md-6f">
+                        <h2 class="sub-titulo-sede-gov-co">Información sede principal</h2>
+                    
+                        <h3>Dirección:</h3> 
+                        <p>Bogotá D.C. - Carrera 30 # 48-51</p>
+                    
+                        <h3>Horarios de atención al ciudadano:</h3>
+                        <p>Abierto al público de lunes a viernes de 9:00 a.m. a 4:00 p.m. jornada continua Sede Central y territorial Cundinamarca (Horario de atención temporal acatando las medidas y demás regulaciones de bioseguridad)</p>
+                        <h3>Teléfono Conmutador:</h3>
+                        <p>
+                            <a href="tel:6016531888">+57 601 653 18 88</a>
+                        </p>
+                        <h3>Correo de contacto:</h3>
+                        <p>
+                            <a href="mailto:contactenos@igac.gov.co">contactenos@igac.gov.co</a>
+                        </p>
+                    
+                        <h3>Correo de notificaciones judiciales:</h3>
+                        <p>
+                            <a href="mailto:judiciales@igac.gov.co">judiciales@igac.gov.co</a>
+                        </p>
+                        <p>NIT: 8999990049</p>
+                    
+                        <p>©Copyright 2021 - Todos los derechos reservados Gobierno de Colombia</p>
+                    </div>                
+                    <div class="col-md-6f">
+                        <h3>Contáctenos en nuestras redes sociales</h3>
+                    
+                        <div class="redes-sociales">
+                            <p>
+                                <a href="https://www.facebook.com/IgacColombia" tabindex="-1" target="_blank">
+                                    <img alt="Visitar Facebook IGAC" class="icono-redes" src="/images/footer/facebook.svg">
+                                    Facebook IGAC 
+                                </a>
+                            </p>
+                    
+                            <p>
+                                <a href="https://twitter.com/igacColombia" tabindex="-1" target="_blank">
+                                    <img alt="Visitar Twitter IGAC" class="icono-redes" src="/images/footer/twitter.svg">
+                                    Twitter IGAC 
+                                </a>
+                            </p>
+                    
+                            <p>
+                                <a href="https://www.instagram.com/accounts/login/?next=/igacColombia/" tabindex="-1" target="_blank"><img alt="Visitar Instagram IGAC" class="icono-redes" src="/images/footer/instagram.svg">
+                                    Instagram IGAC 
+                                </a>
+                            </p>
+                        </div>                    
+                        <div class="footer-enlaces"><a class="btn-low">Políticas</a> 
+                            <a class="btn-low">Mapa del sitio</a> 
+                            <a class="btn-low">Términos y condiciones</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gov-co-footer-pie">
+            <div class="gov-co-footer-auto containerf">
+                <img alt="Logo marca de Colombia" class="gov-co-logo-pie-blanco" src="/images/footer/marca_colombia.png">
+
+                <img alt="Logo de Gov Co" class="gov-co-logo-pie-mesa" src="/images/footer/header_govco.png">
+
+                <a class="text-white text-align-right" href="https://www.gov.co" target="_blank">
+                    Conoce GOV.CO aquí
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modalLogin" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="border: none; padding-bottom: 0px;">
+                    <a href="#" class="close" onclick="closeLogin(); return false;" aria-label="Cerrar"><span aria-hidden="true">&times;</span></a>
+                    <h4 class="modal-title">Iniciar sesi&oacute;n</h4>
+                </div>
+                <div class="modal-body" style="padding-top: 0px;">
+                    <div id="loginContainer">
+                        <div id="authContainer">
+                        </div>
+                    </div>
+                    <div id="logoutContainer" style="text-align: center;padding: 10px;">
+                        <img id="userPhoto2" src="/images/icono_ingreso.png" style="width: 64px; height: 64px;border-radius: 50%;" alt="Imagen Usuario" />
+                        <h5><span id="userName2"></span></h5>
+                        <button id="logoutBtn" type="button" onclick="signOut();" class="btn btn-default btn-danger">
+                            Cerrar sesi&oacute;n
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth__es.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="/js/navbar.js"></script>
+    <script type="text/javascript" src="/js/maestra.js"></script>
+
+</body>
+</html>

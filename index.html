@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="description" content="Colombia en Mapas, un atlas vivo. Conoce, descarga y comparte  los mapas oficiales de la República de Colombia." />
+    <meta name="keywords" content="mapa, mapas, Colombia, atlas, imágenes, cartografía, municipio, departamento, catastro, oficial, IGAC" />
+    <meta name="author" content="Instituto Geográfico Agustín Codazzi - IGAC" />
+    <meta name="title" property="og:title" content="Colombia en Mapas">
+    <meta property="og:type" content="website">
+    <meta name="image" property="og:image" content="https://www.colombiaenmapas.gov.co/images/Preview.png">
+    <meta http-equiv="content-language" content="es" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="canonical" href="https://www.colombiaot.gov.co" />
+    <link rel="shortcut icon" href="./../images/favicon.ico" />
+    <title>Observatorio de la Tierra y el Territorio</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+
+
+    <link rel="stylesheet" href="/../css/navbar-footer.css">
+    <link rel="stylesheet" href="/../css/maestra.css">
+</head>
+<body class="calcite calcite-nav-top">
+    <!--header-->
+    <div class="barra_gov">
+        <a class="logo-gov" href="https://www.gov.co/home/" target="_blank">
+            <img alt="Logo Gov.co" src="/../images/header_govco.png">
+        </a>
+    </div>
+    <nav>
+        <div class="navbarigac">
+            <div class="logos">
+                <a href="https://www.igac.gov.co" class="navbar-brand-igac" target="_blank">
+                    <img alt="Logo IGAC" src="/../images/logo.png">
+                </a>
+                <img src="/../images/Logo_OBS.png" alt="Diccionario Geográfico de Colombia">
+            </div>
+            <ul id="link-list">
+                <li>
+                    <a rel="noopener" href="/observatoriotierrayterritorio">Inicio</a>
+                </li>
+            </ul>
+            <button class='nav-bar-toggle-igac'>
+                <div class='icon-bar'></div>
+                <div class='icon-bar'></div>
+                <div class='icon-bar'></div>
+            </button>
+        </div>
+        <div class='navbarnavigac'>
+        </div>
+    </nav>
+    <!--body-->
+    <div class="herobanner-container">
+        <div class="herobanner">
+            <div class="container herobanner-text">
+                <div class="row pb-4">
+                    <div class="col-md-8 col-lg-6">
+                        <p class="welcome mb-0">Bienvenido al</p>
+                        <h1>
+                            <b>OBSERVATORIO DE LA</b>
+                            <br>
+                            TIERRA Y EL TERRITORIO
+                        </h1>
+                        <p class="introduction pb-3">
+                            Ordenamiento del Territorio.
+                            <br>
+                            Evaluación, monitoreo y seguimiento de los cambios en el territorio.
+                        </p>
+                        <a class="btn px-3 py-2" href="/../visor/" target="_blank">
+                            Visitar la plataforma
+                        </a>
+                    </div>
+                </div>
+                <!-- If we need pagination-->
+                <div class="swiper-pagination position-relative swiper-pagination1 text-left col-12 d-flex mt-2 p-0"></div>
+            </div>
+            <div class="container-fluid swiper-container">
+                <!-- Slider main container -->
+                <div class="swiper-herobanner">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img class="hero-bg" src="/../images/hero1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="hero-bg" src="/../images/hero2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="hero-bg" src="/../images/hero3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="position-relative">
+        <div class="section servicios">
+            <img class="shape" src="/../images/shape.png" alt="">
+            <div class="container">
+                <h2 class="title mb-4">
+                    Servicios
+                </h2>
+                <div class="position-relative d-flex align-items-center">
+                    <div class="swiper-button-prev swiper-prev"></div>
+                    <div class="swiper-button-next swiper-next"></div>
+                    <div class="swiper-pagination swiper-pagination2 col-12 d-flex mt-5"></div>
+                    <div id="swiper2" class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="/../visor" target="_blank" class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="icono" src="/../images/satelite.svg" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Imágenes de satélite y mosaicos</h3>
+                                        <p class="card-text">
+                                            Plataforma para acceso a imágenes diarias, mosaicos mensuales y trimestrales
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://forms.gle/Q2XDkJ5xDvLmX9847" target="_blank" class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="/../images/capacitaciones.svg" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Capacitaciones</h3>
+                                        <p class="card-text">
+                                            Acceso a cursos y material técnico por Espacios designados para solicitar capacitación del Observatorio de la Tierra y el Territorio.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://igacoffice365-my.sharepoint.com/:f:/g/personal/elkin_gongora_igac_gov_co/EtP4UOSUshxBmfBqFMHdjWgBpmJlLBZfhjwfi1L_Pghs_w" target=”_blank” class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="/../images/compllementos.svg" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Complementos servicios web</h3>
+                                        <p class="card-text">
+                                            Despliegue mediante servicios web geográficos en software (Plugin) QGIS y ArcGIS PRO
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://enterpriseaws.procalculo.com/arcgis/apps/dashboards/bdf0dbf3ac5c4515a887d7279d2c0759" target="_blank" class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="/../images/indicadores.svg" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Indicadores</h3>
+                                        <p class="card-text">
+                                            Consulta de indicadores y analítica de datos obtenidos del Observatorio de la Tierra y El Territorio
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/../entidades-publicas.html" class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="/../images/entidades.svg" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Entidades públicas</h3>
+                                        <p class="card-text">
+                                            Conozca las entidades públicas adscritas al Observatorio de la Tierra y el Territorio
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://observatorios-organization.gitbook.io/observatorio-de-la-tierra-y-el-territorio/soporte-y-faq/preguntas-frecuentes-faq" class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="/../images/faqs.svg" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Preguntas frecuentes</h3>
+                                        <p class="card-text">
+                                            Apoyo y respuesta a las inquietudes de los usuarios
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://observatorios-organization.gitbook.io/observatorio-de-la-tierra-y-el-territorio/soporte-y-faq/contacto-de-soporte" class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="/../images/soporte.svg" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Soporte</h3>
+                                        <p class="card-text">
+                                            Asistencia técnica continua, garantizando una operación sin contratiempos.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section que-es-ott">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="text">
+                            <h2 class="title text-left">
+                                ¿Qué es el OTT?
+                            </h2>
+                            <p>Plataforma virtual de información espacial, permitiendo el monitoreo y seguimiento de los cambios del territorio colombiano a partir de datos obtenidos por percepción remota.
+                            <br>
+                            <br>
+                            El Observatorio de la Tierra y el Territorio es una herramienta fundamental para la toma de decisiones sobre el uso del territorio, la protección de los recursos naturales y la mitigación del cambio climático. Apoya procesos de diagnóstico y actualización del modelamiento del espacio territorial de manera sostenible, permitiendo evaluar la efectividad de las políticas públicas.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/../images/que_es_ott.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section video">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 d-flex pr-0">
+                        <iframe id="youtubeVideo" src="https://www.youtube.com/embed/783QSo2BG-0?si=jtbHwi7WKzVRp9kA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-text col-md-12 col-lg-6 d-flex align-items-center">
+                        <div class="text px-3">
+                            <h4 class="title mb-4 text-left">¿Cómo funciona el Observatorio de la Tierra y el Territorio?</h4>
+                            <p>El Observatorio de la Tierra y el Territorio se basa en tecnología avanzada, lo que permite un monitoreo continuo y sistemático de la superficie terrestre mediante el uso de imágenes satelitales y otros datos geoespaciales. Este observatorio no solo es una herramienta esencial para el cumplimiento de los objetivos del Plan Nacional de Desarrollo 2023-2026 en cuanto al Ordenamiento del Territorio, sino que también desempeña un papel fundamental en la gestión y preservación de los recursos naturales, seguimiento de cambios ambientales a nivel local, regional y nacional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section plataforma">
+            <div class="container">
+                <div class="col-md-10 justify-content-center m-auto text-center">
+                    <h2 class="title">Plataforma Web Observatorio de la Tierra y el Territorio</h2>
+                    La Plataforma Web permite acceder, consultar y visualizar imágenes satelitales diarias adquiridas mediante la constelación PlanetScope y otros proveedores, sobre el territorio colombiano junto con un Basemap para su despliegue mediante servicios web geográficos en plataformas SIG.
+                    <br>
+                    <br>
+                    El Observatorio de la Tierra y el Territorio es una herramienta que tiene como objetivo proporcionar información espacial oportuna, precisa y confiable sobre la transformación del territorio, para apoyar la toma de decisiones y la planeación estratégica del Instituto Geográfico Agustín Codazzi (IGAC) y otras entidades públicas en el marco de la Administración del Territorio.
+                </div>
+                <div class="goto row mt-5">
+                    <div class="col-md-4 mb-4">
+                        <div class="swiper-slide card justify-content-center text-center bg-transparent border-0">
+                            <div class="number count">1.1</div>
+                            <div class="card-body p-0">
+                                <h3 class="card-title">Millones de km2</h3>
+                                <p class="card-text">
+                                    Cubrimiento de imágenes diarias
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="swiper-slide card justify-content-center text-center bg-transparent border-0">
+                            <div class="number count" id="nimagenes">3.8</div>
+                            <div class="card-body p-0">
+                                <h3 class="card-title">Millones de imágenes</h3>
+                                <p class="card-text">
+                                    En nuestra base de datos
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="swiper-slide card justify-content-center text-center bg-transparent border-0">
+                            <div class="number count">+72</div>
+                            <div class="card-body p-0">
+                                <h3 class="card-title">Entidades</h3>
+                                <p class="card-text">
+                                    Adscritas a la plataforma
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="section pt-5 pb-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="title">
+                            ¿Qué es el OTT?
+                        </h2>
+                        <p>
+                            Plataforma virtual de información espacial, permitiendo el monitoreo y seguimiento de los cambios del territorio colombiano a partir de datos obtenidos por percepción remota. El Observatorio de la Tierra y el Territorio es una herramienta fundamental para la toma de decisiones sobre el uso del territorio, la protección de los recursos naturales y la mitigación del cambio climático. Apoya procesos de diagnóstico y actualización del modelamiento del espacio territorial de manera sostenible, permitiendo evaluar la efectividad de las políticas públicas.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="card-img-top" src="/../images/image016.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr> -->
+        <div class="section swiper-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="swiper-module">
+                            <div id="juxtapose" class="juxtapose">
+                                <img src="./images/izquierda-agosto-2023.png" alt="Before Image" data-label="Before Image">
+                                <img src="./images/derecha-febrero-2024.png" alt="After Image" data-label="After Image">
+                            </div>
+                        </div>
+                        <p class="copy mt-1">
+                            Caso de inundación San Marcos - Ciénaga Los Lagos. <b>N: 2505142 m; E: 4763474 m</b>
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-lg-6">
+                        <h2 class="title text-left">
+                            Imágenes y mosaicos
+                        </h2>
+                        <p>
+                            La plataforma del Observatorio de la Tierra y el Territorio le facilita una gran cantidad de imágenes de media y alta resolución para diversos tipos de análisis referentes a los cambios en el territorio. Las imágenes cuentan con resolución espectral de 3 a 8 bandas. Adicionalmente.
+                            <br>
+                            <br>
+                            Las imágenes cuentan con una resolución espacial media y alta de 3.7 metros y 50 centímetros respectivamente; permitiendo la consulta y consumo de imágenes satelitales con resolución temporal diaria a nivel nacional.
+                            <br>
+                            <br>
+                            El acceso a esta información, apoyará procesos de diagnóstico y actualización del modelamiento del espacio territorial de manera sostenible, permitiendo evaluar la efectividad de las políticas públicas, entre otras.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="shape" src="/../images/shape2.png" alt="">
+        <div class="section wizard">
+            <div class="container">
+                <div class="row">
+                    <div class="wizard-buttons col-md-4">
+                        <div class="btn w-100 text-center"><b>Mosaicos trimestrales: </b>Caso de Estudio Deforestación Orinoquía</div>
+                        <button class="btn active">Primer Trimestre 2016</button>
+                        <button class="btn">Primer Trimestre 2017</button>
+                        <button class="btn">Primer Trimestre 2018</button>
+                        <button class="btn">Primer Trimestre 2019</button>
+                        <button class="btn">Primer Trimestre 2020</button>
+                        <button class="btn">Primer Trimestre 2021</button>
+                        <button class="btn">Primer Trimestre 2022</button>
+                        <button class="btn">Primer Trimestre 2023</button>
+                    </div>
+                    <div class="steps col-md-8 d-flex align-items-center">
+                        <div class="step active">
+                            <div class="img-container">
+                                <img src="/../images/tercertrimestre2016.jpg" alt="inicio">
+                                <p>
+                                    Deforestación
+                                    <br>
+                                    Reserva Forestal cerca de Río Inírida
+                                    <br>
+                                    N: 1797586 m; E: 5064225 m
+                                </p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="/../images/tercertrimestre2017.jpg" alt="inicio">
+                            </div>
+                            <p>
+                                Deforestación
+                                <br>
+                                Reserva Forestal cerca de Río Inírida
+                                <br>
+                                N: 1797586 m; E: 5064225 m
+                            </p>
+                        </div>
+
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="/../images/tercertrimestre2018.jpg" alt="inicio">
+                            </div>
+                            <p>
+                                Deforestación
+                                <br>
+                                Reserva Forestal cerca de Río Inírida
+                                <br>
+                                N: 1797586 m; E: 5064225 m
+                            </p>
+                        </div>
+
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="/../images/tercertrimestre2019.jpg" alt="inicio">
+                            </div>
+                            <p>
+                                Deforestación
+                                <br>
+                                Reserva Forestal cerca de Río Inírida
+                                <br>
+                                N: 1797586 m; E: 5064225 m
+                            </p>
+                        </div>
+
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="/../images/tercertrimestre2020.jpg" alt="inicio">
+                            </div>
+                            <p>
+                                Deforestación
+                                <br>
+                                Reserva Forestal cerca de Río Inírida
+                                <br>
+                                N: 1797586 m; E: 5064225 m
+                            </p>
+                        </div>
+
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="/../images/tercertrimestre2021.jpg" alt="inicio">
+                            </div>
+                            <p>
+                                Deforestación
+                                <br>
+                                Reserva Forestal cerca de Río Inírida
+                                <br>
+                                N: 1797586 m; E: 5064225 m
+                            </p>
+                        </div>
+
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="/../images/tercertrimestre2022.jpg" alt="inicio">
+                            </div>
+                            <p>
+                                Deforestación
+                                <br>
+                                Reserva Forestal cerca de Río Inírida
+                                <br>
+                                N: 1797586 m; E: 5064225 m
+                            </p>
+                        </div>
+
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="/../images/tercertrimestre2023.jpg" alt="inicio">
+                            </div>
+                            <p>
+                                Deforestación
+                                <br>
+                                Reserva Forestal cerca de Río Inírida
+                                <br>
+                                N: 1797586 m; E: 5064225 m
+                            </p>
+                        </div>
+
+                        <!-- Add more steps here if needed -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section objetivos">
+            <div class="container">
+                <h2 class="title mb-4">
+                    Objetivos
+                </h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card w-100 bg-transparent border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="/../images/info-eficiente.svg" alt="Card image cap">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Fuentes de información eficiente</h5>
+                              <p class="card-text">Uso de soluciones tecnológicas existentes, proveedores mundiales directos, propietarios de plataformas satelitales de toma de imágenes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card w-100 bg-transparent border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="/../images/info-actualizada-b.svg" alt="Card image cap">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Información Actualizada</h5>
+                              <p class="card-text">Análisis oportuno y multitemporal del territorio.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card w-100 bg-transparent border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="/../images/gestion-datos-b.svg" alt="Card image cap">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Gestión asertiva de los datos</h5>
+                              <p class="card-text">Información apta para el ejercicio de múltiples entidades públicas, utilizada de manera responsable por personal idóneo, en el marco del a ICDE y la CCE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card w-100 bg-transparent border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="/../images/asociacion-entidades.svg" alt="Card image cap">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Asociación con entidades estatales</h5>
+                              <p class="card-text">Acercamiento con entidades públicas de orden nacional para cooperación y fortalecimiento del Observatorio de la Tierra y el Territorio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card w-100 bg-transparent border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="/../images/analitica.svg" alt="Card image cap">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Analítica de datos Aplicación de IA</h5>
+                              <p class="card-text">Identificación de variaciones geográficas – relieve, cambios antrópicos que demarquen posibles alteraciones de la propiedad o infraestructuras.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="section pt-5 pb-5">
+            <div class="container">
+                <h2 class="title text-center">
+                    Panel de consultas dentro de la plataforma
+                </h2>
+                <p>La plataforma de web es amigable con el usuario, permitiéndole realizar consultas según sus necesidades. Además de asegurar información actualizada, permite seleccionar y consumir imágenes según criterios específicos como entidad territorial, fecha, nubosidad, entre otros.</p>
+                <div class="row align-items-center mt-5">
+                    <div class="col-md-6">
+                        <img src="/../images/preview.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/../images/preview.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="section panel-consultas">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-6">
+                            <img class="card-img-top" src="/../images/publico_objetivo.png" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="title text-left">
+                                Público objetivo
+                            </h2>
+                            <p>
+                                El Observatorio de la Tierra y el Territorio no solo es una plataforma de consulta y consumo de imágenes, sino un poderoso aliado que permite a las entidades realizar análisis más precisos y confiables en el marco de la Administración del Territorio, facilitando la identificación y monitoreo de la transformación del territorio. Le invitamos a aprovechar al máximo las herramientas del Observatorio y a compartir sus aportes para seguir fortaleciendo esta iniciativa. Con su participación, podemos construir un mejor futuro para nuestro territorio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section noticias">
+            <div class="container">
+                <h2 class="title mb-4">
+                    Noticias
+                </h2>
+                <div class="position-relative d-flex align-items-center">
+                    <div class="swiper-pagination swiper-pagination3 col-12 d-flex mt-5"></div>
+                    <div class="swiper-button-prev swiper2-prev"></div>
+                    <div class="swiper-button-next swiper2-next"></div>
+                    <div id="swiper3" class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <h3 class="subtitle">
+                                            EL 100% DE COLOMBIA YA CUENTA CON IMÁGENES SATELITALES.
+                                        </h3>
+                                        <div class="resume mb-3">
+                                            Gracias al observatorio de la tierra y el territorio del igac
+                                        </div>
+                                        <p>
+                                            Bogotá, D.C. 2 de febrero de 2024. El Instituto Geográfico Agustín Codazzi - IGAC lanzó la fase inicial del Observatorio de la Tierra y el Territorio, una plataforma digital con la que se obtendrán información espacial para la evaluación, monitoreo y seguimiento a los cambios que se generan en todo el territorio nacional.
+                                        </p>
+                                        <br>
+                                        <a class="btn" href="https://www.igac.gov.co/noticias/el-100-de-colombia-ya-cuenta-con-imagenes-satelitales-gracias-al-observatorio-de-la-tierra-y-el-territorio-del-igac" target="_blank">
+                                            Ver noticia completa
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="icono" src="/../images/news1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <img class="icono" src="/../images/news2.png" alt="">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3 class="subtitle">
+                                            Boletín Semanal No. 7: El 100% de Colombia ya cuenta con imágenes satelitales.
+                                        </h3>
+                                        <div class="resume mb-3">
+                                            Gracias al observatorio de la tierra y el territorio del igac.
+                                        </div>
+                                        <p>
+                                            La base de datos Ambientalex.info, comparte con la Comunidad Unadista el Boletín Semanal No.7 que informa sobre la normativa y los eventos en protección y preservación del medio ambiente.
+                                        </p>
+                                        <br>
+                                        <a class="btn" href="https://noticias.unad.edu.co/index.php/unad-noticias/todas/88-biblioteca/6683-boletin-semanal-no-7-el-100-de-colombia-ya-cuenta-con-imagenes-satelitales-gracias-al-observatorio-de-la-tierra-y-el-territorio-del-igac" target="_blank">
+                                            Ver noticia completa
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="containerf">
+            <div class="footer-container">
+                <div class="rowf">
+                    <div class="col-md-6f">
+                        <h2 class="footer-titulo">Instituto Geográfico Agustín Codazzi - IGAC</h2>
+                    </div>
+                    <div class="logos-footer col-md-6f">&nbsp;</div>
+                </div>
+                <div class="rowf">
+                    <div class="col-md-6f">
+                        <h2 class="sub-titulo-sede-gov-co">Información sede principal</h2>
+
+                        <h3>Dirección:</h3>
+                        <p>Bogotá D.C. - Carrera 30 # 48-51</p>
+
+                        <h3>Horarios de atención al ciudadano:</h3>
+                        <p>Abierto al público de lunes a viernes de 9:00 a.m. a 4:00 p.m. jornada continua Sede Central y territorial Cundinamarca (Horario de atención temporal acatando las medidas y demás regulaciones de bioseguridad)</p>
+                        <h3>Teléfono Conmutador:</h3>
+                        <p>
+                            <a class="btn" href="tel:6016531888">+57 601 653 18 88</a>
+                        </p>
+                        <h3>Correo de contacto:</h3>
+                        <p>
+                            <a class="btn" href="mailto:contactenos@igac.gov.co">contactenos@igac.gov.co</a>
+                        </p>
+
+                        <h3>Correo de notificaciones judiciales:</h3>
+                        <p>
+                            <a class="btn" href="mailto:judiciales@igac.gov.co">judiciales@igac.gov.co</a>
+                        </p>
+                        <p>NIT: 8999990049</p>
+
+                        <p>©Copyright 2024 - Todos los derechos reservados Gobierno de Colombia</p>
+                    </div>
+                    <div class="col-md-6f">
+                        <h3>Contáctenos en nuestras redes sociales</h3>
+
+                        <div class="redes-sociales">
+                            <p>
+                                <a class="btn" href="https://www.facebook.com/IgacColombia" tabindex="-1" target="_blank">
+                                    <img alt="Visitar Facebook IGAC" class="icono-redes" src="/../images/footer/facebook.svg">
+                                    Facebook IGAC
+                                </a>
+                            </p>
+
+                            <p>
+                                <a class="btn" href="https://twitter.com/igacColombia" tabindex="-1" target="_blank">
+                                    <img alt="Visitar Twitter IGAC" class="icono-redes" src="/../images/footer/twitter.svg">
+                                    Twitter IGAC
+                                </a>
+                            </p>
+
+                            <p>
+                                <a class="btn" href="https://www.instagram.com/accounts/login/?next=/igacColombia/" tabindex="-1" target="_blank"><img alt="Visitar Instagram IGAC" class="icono-redes" src="/../images/footer/instagram.svg">
+                                    Instagram IGAC
+                                </a>
+                            </p>
+                        </div>
+                        <div class="footer-enlaces"><a class="btn" class="btn-low">Políticas</a>
+                            <a class="btn" class="btn-low">Mapa del sitio</a>
+                            <a class="btn" class="btn-low">Términos y condiciones</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gov-co-footer-pie">
+            <div class="gov-co-footer-auto containerf">
+                <img alt="Logo marca de Colombia" class="gov-co-logo-pie-blanco" src="/../images/marca_colombia.png">
+
+                <img alt="Logo de Gov Co" class="gov-co-logo-pie-mesa" src="/../images/header_govco.png">
+
+                <a class="btn" class="text-white text-align-right" href="https://www.gov.co" target="_blank">
+                    Conoce GOV.CO aquí
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--swipper js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+
+    <script src="/../script.js"></script>
+    <script  src="/../navbar.js"></script>
+
+
+
+</body>
+</html>
